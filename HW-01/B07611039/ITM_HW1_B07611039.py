@@ -69,8 +69,8 @@ TFIDF_vectors = TFIDF_vectorizer.fit_transform(all_file)
 # In[8]:
 
 
-### outfile the 1.vec and 2.vec
-for i in range(1,3):
+### outfile 
+for i in range(1,1096):
     filename = "doc" + str(i) + ".txt"
     outF = open(filename, "w")
     for line in TFIDF_vectors.toarray()[i - 1]:
