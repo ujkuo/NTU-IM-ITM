@@ -133,4 +133,7 @@ plt.legend(loc = "upper right")
 plt.title("Precision Recall Curve: SVM Linear")
 plt.show()
 
+result = []
+output = []
+result.extend(SVC_Linear_model.predict(TFIDF_vectors_testing))
 pd.DataFrame(result).to_csv('svmLinear.csv', index = True)

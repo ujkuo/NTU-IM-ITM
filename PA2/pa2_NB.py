@@ -146,4 +146,7 @@ plt.title("Precision Recall Curve: Naïve Bayes Model")
 plt.show()
 #plt.savefig('P.png')
 
+result = []
+output = []
+result.extend(model.predict(binary_vectors_test))
 pd.DataFrame(result).to_csv('NB.csv', index = True)

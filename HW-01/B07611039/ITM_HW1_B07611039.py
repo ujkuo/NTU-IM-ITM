@@ -74,7 +74,7 @@ for i in range(1,1096):
     filename = "doc" + str(i) + ".txt"
     outF = open(filename, "w")
     for line in TFIDF_vectors.toarray()[i - 1]:
-        outF.write(str(line))
+        outF.write(str(i) + "," + str(line))
         outF.write("\n")
     outF.close()
 
